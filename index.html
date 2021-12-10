@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <!--* CSS FILE -->
+    <link rel="stylesheet" href="./css/main.css">
+    <!--* CSS FILE END -->
+    <!--* FONTAWESOME LINK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <!--* FONTAWESOME LINK END -->
+    <!--* BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--* BOOTSTRAP CSS END -->
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box text-center d-flex align-items-center flex-column">
+            <h1 class="box__title">Rock Paper Scissors</h1>
+            <button class="btn btn-danger fs-3" id="restart__btn">Restart Game</button>
+            <div class="box__score">
+                <div class="player__score">Player: &nbsp; <span id="player__ball">0</span> </div>
+                <div class="computer__score">Computer: &nbsp;<span id="computer__ball">0</span> </div>
+            </div>
+            <h1 class="box__subtitle">Make Your Selection</h1>
+            <div class="box__choices">
+                <i id="rock" class="box__choice fas fa-hand-rock fa-10x"></i>
+                <i id="paper" class="box__choice fas fa-hand-paper fa-10x"></i>
+                <i id="scissors" class="box__choice fas fa-hand-scissors fa-10x"></i>
+            </div>
+        </div>
+
+        <div class="box__modal">
+            <div class="box__modal-result text-center">
+                <h1 class="box__modal-title">You Win!</h1>
+                <i id="result__icon" class="fas fa-hand-rock fa-10x"></i>
+                <h2 class="computer__choice">Computer choice <span>Paper</span></h2>
+            </div>
+        </div>
+        <div class="box__modal-overlay"></div>
+
+    </div>
+
+    <!--* BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <!--* BOOTSTRAP JS END -->
+    <!--* JAVSCRIPT FILE  -->
+    <script src="./js/index.js"></script>
+    <!--* JAVSCRIPT FILE END  -->
+</body>
+
+</html>
